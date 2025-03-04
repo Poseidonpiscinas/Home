@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <title>Poseidon Piscinas</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Empresa de tratamento de piscinas">
+
+        <link rel="icon" href="imagens/1736106661099.png" type="image/x-icon">
+
+        <link rel="icon" href="imagens/1736106661099.png" sizes="16x16" />
+
+        <link rel="icon" href="imagens/1736106661099.png" sizes="32x32" type="image/png" />
+
+        <link rel="icon" href="imagens/1736106661099.png" sizes="48x48" type="image/png" />
+
+        <link rel="apple-touch-icon" href="imagens/1736106661099.png">
+
+    </head>
+
+    <body>
+
+        <style>
+
+            body {
+
+                margin: 0;
+
+                background:url(imagens/onda.webp) center  center no-repeat;
+                text-align: center;
+
+                box-sizing: border-box;
+                background-size: cover;
+
+                margin: -20px 0px;
+            }
+            .cabecalho {
+                background:url(imagens/onda.webp);
+            }
+            .home{
+
+                position: absolute;
+
+                margin: 40px 0px 0px 87%;
+
+                display: grid;
+
+                height: 5%;
+
+            }
+
+            .bandeira {
+
+                position: absolute;
+
+                margin: -15px 0px 0px 55%;
+
+                height: 70px;
+
+                transition: 1s;
+
+            }
+
+            .bandeira:hover {
+
+                margin: 20px 0px 0px 55%;
+
+            }
+
+            .logo {
+
+                display: inline;
+
+                height: 300px;
+
+            }
+
+            .alternativa{
+
+                margin: -2px 10px;
+
+                height: 15px;
+
+            }
+
+            .mainmenubtn {
+
+                background-color: skyblue;
+
+                color: white;
+
+                border: none;
+
+                cursor: pointer;
+
+                padding:20px;
+
+                margin-top:20px;
+
+            }
+
+            .mainmenubtn:focus {
+
+                background-color: blue
+
+            }
+
+            .dropdown-child {
+
+                background-color:white ;
+
+                border-radius: 0px 0px 10px 10px;
+                border-style: solid;
+
+                border-width: 0.5px;
+
+                border-color: black;
+
+                position: absolute;
+
+                margin: 22px 0px 0px -5px;
+
+                display: none;
+
+                min-width: 150px;
+
+            }
+
+            .dropdown-child a {
+
+                color: black;
+
+                padding: 20px;
+
+                text-decoration: none;
+
+                display: block;
+
+                pointer-events: painted;
+
+            }
+
+            div button div a:hover{
+
+                pointer-events: painted;
+
+                color: blue;
+
+                text-decoration: underline;
+
+            }
+
+            .caixa:hover> .dropdown-child {
+
+                display: block;
+
+            }
+
+            .um,
+
+            .dois,
+
+            .tres{
+
+                margin: 4px;
+
+            }
+
+            button.caixa {
+
+                display: block;
+
+                background: transparent;
+
+                border-radius: 10px;
+
+                border-style: none;
+
+                padding: 4px;
+
+                height: 53px;
+
+                width: 53px;
+
+            }
+
+            button.caixa:hover{
+
+                color: white;
+
+                border-radius: 10px 10px 0px 0px;
+
+                border-style: none;
+
+                padding: 4px;
+
+                height: 53px;
+
+                width: 53px;
+
+            }
+
+            .caixa .um{
+
+                height: 4px;
+
+                background-color: black;
+
+                border-radius: 10px;
+
+                transition: 0.3s;
+
+            }
+
+            .caixa:hover > .um{
+
+                margin: 3px 0px 0px 0px;
+
+                height: 4px;
+
+                background-color: black;
+
+                border-radius: 10px;
+
+                transform: rotate(45deg);
+
+                transition: 0.3s;
+
+            }
+
+            .caixa .dois{
+
+                height: 4px;
+
+                background-color: black;
+
+                border-radius: 10px;
+
+                transition: 0.5s;
+
+            }
+
+            .caixa:hover > .dois{
+
+                height: 4px;
+
+                width: 0px;
+
+                background-color: black;
+
+                border-radius: 10px;
+
+                transition: 0.1s;
+
+            }
+
+            .caixa .tres{
+
+                height: 4px;
+
+                background-color: black;
+
+                border-radius: 10px;
+
+                transition: 0.1s;
+
+            }
+
+            .caixa:hover > .tres{
+
+                margin: -15px 0px 0px 0px ;
+
+                height: 4px;
+
+                background-color: black;
+
+                border-radius: 10px;
+
+                transform: rotate(138deg);
+
+                transition: 0.3s;
+
+            }
+
+            nav {
+                margin: 26px;
+
+            }
+
+            hr{
+
+                margin: 30px 0px;
+
+            }
+
+            .informacao{
+
+                margin: 45px;
+
+            }
+
+            .texto{
+
+                margin: 55px 0px;
+
+                text-align: justify;
+
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            }
+
+            .rodape {
+
+                background:url(imagens/onda2.webp);
+
+                background-size: cover;
+
+                margin: -20px 0px;
+
+            }
+            .form{
+                background-image: url(imagens/fundo\ SAC.webp);
+                display: inline-grid;
+                padding: 30px 60px;
+                margin: 50px;
+                border-width: 0.5px;
+                border-style: solid;
+                border-radius: 10px;
+                color: white;
+            }
+
+            label{
+
+                margin:10px;
+
+                font-weight: bold;
+
+            }
+
+            .botaoenv:hover {
+
+                text-decoration: underline;
+
+                border-style: solid;
+
+            }
+
+            .inf {
+
+                height: 10px;
+
+            }
+
+            .imagem {
+                margin: 5px;
+                height: 40px;
+                border-radius: 50%;
+                border-color: black;
+
+                border-width: 0.5px;
+
+                border-style: solid;
+
+            }
+
+            .imagem:hover{
+
+                height: 42px;
+
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+                border-radius: 50%;
+
+                border-color: white;
+
+                border-width: 0.5px;
+
+                border-style: solid;
+
+            }
+
+            .mensagem {
+
+                height: 100px;
+
+                width: 190px;
+
+            }
+
+            h4 {
+
+                margin: 5px;
+
+            }
+
+            nav {
+
+                display: flex;
+
+                margin: 26px;
+
+                justify-content: center;
+
+            }
+
+            .Beauty{
+
+                height: 125px;
+
+                border-radius: 10px;
+
+                margin: 50px;
+
+            }
+
+            .Beauty:hover{
+
+                border-radius: 10px;
+
+                border-style: solid;
+
+                border-width: 0.5px;
+
+                border-color: black;
+
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+            }
+
+            img.Sac {
+
+                height: 125px;
+
+                border-radius: 10px;
+
+                margin: 50px;
+                border-style: solid;
+
+                border-width: 0.5px;
+
+                border-color: black;
+
+            }
+
+            img.Sac:hover{
+
+                border-radius: 10px;
+
+                border-style: solid;
+
+                border-width: 0.5px;
+
+                border-color: black;
+
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+            }
+
+            .direitos {
+                color:white;
+                font-size: 9px;
+
+                text-align: center;
+
+                margin: -24px 0 1% 0;
+
+            }
+            .box{
+                margin: 50px;
+                display: inline-flex;
+            }
+            .linha{
+                margin: 20px;
+            }
+            .nome{
+                text-decoration: none;
+                color: black;
+                margin: 20px;
+            }
+            .nome:hover{
+                text-decoration: underline;
+                color: blue;
+            }
+
+            img.doacao {
+
+                display: grid;
+
+                transform: rotate(-45deg);
+
+                height: 71px;
+
+                border-radius: 17px;
+
+                justify-content: end;
+
+                margin: 6% 0% 11% 6%;
+
+            }
+
+            img.doacao:hover{
+
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+                border: 0.5px solid #000;
+
+                transition: background 0.6s;
+
+            }
+
+            a{
+
+                display: contents;
+            }
+
+            /* Estilo do botão */
+
+            #topButton {
+
+                position: fixed;
+
+                bottom: 20px;
+
+                right: 20px;
+
+                height: 38px;
+
+                background: transparent;
+
+                padding: 0px;
+
+                border: none;
+
+                border-radius: 50px;
+
+                cursor: pointer;
+
+                display: none; /* Inicialmente escondido */
+
+            }
+
+            #topButton:hover {
+
+                background: transparent;
+
+            }
+
+            .topo{
+
+                transform: rotate(90deg);
+
+                border-radius: 50px;
+
+                width: 38px;
+
+            }
+
+            .admin {
+
+                display: grid;
+
+                position: absolute;
+
+                margin: 30px 8px;
+
+                width: 50px;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- Botão Voltar ao topo -->
+
+        <button id="topButton" onclick="scrollToTop()"><img src="imagens/voltar pt.webp" alt="voltar ao topo" class="topo"></button>
+
+    
+
+        <script>
+
+            // Mostrar o botão quando o usuário rolar a página
+
+            window.onscroll = function() {
+
+                let button = document.getElementById("topButton");
+
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+
+                    button.style.display = "block";
+
+                } else {
+
+                    button.style.display = "none";
+
+                }
+
+            };
+
+    
+
+            // Função para rolar até o topo
+
+            function scrollToTop() {
+
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            }
+
+        </script>
+
+        <header>
+
+        <a href="https://poseidonpiscinas.github.io/logincontas/" class="contas"><img src="imagens/loguin.webp" class="admin" alt="contas"></a>
+
+            <div class="cabecalho">
+
+                <a href="https://poseidonpiscinas.github.io/login/" class="linkhome"><img src="imagens/homeppreto.webp" alt="home" class="home"></a>
+
+                <img src="imagens/brasil pt.webp" alt="Nacionalidade" class="bandeira">
+
+                <img src="imagens/Poseidon nome pt.webp" alt="Poseidon Piscinas" class="logo">
+
+                <div>
+
+                    <button class="caixa">
+
+                      <div class="um"></div>
+
+                      <div class="dois"></div>
+
+                      <div class="tres"></div>
+
+                  <div class="dropdown-child">
+
+                    <a href="https://poseidonpiscinas.github.io/agendamento/"><img src="imagens/calendário.webp" class="alternativa" alt="agendamento">Agendamento</a>
+                    <a href="https://poseidonpiscinas.github.io/cliente/" target="_blank"><img src="imagens/cliente.webp" class="alternativa" alt="cliente">Cliente</a>
+                      <a href="https://surveyheart.com/form/67b393a07629b06505159257" target="_blank"><img src="imagens/feedback.webp" class="alternativa">Feedback</a>
+                      <a href="https://poseidonpiscinas.github.io/tabela/" target="_blank"><img src="imagens/tabela.webp" class="alternativa">Tabela</a>
+
+                </div>
+
+              </div>
+
+              </button>
+
+            </div>
+
+            </div>
+        </header>
+        <hr>
+<div class="informacao">
+
+
+
+<h1 class="texto">
+
+    Poseidon Piscinas: O rei das águas.
+
+</h1>
+
+
+
+<h2 class="texto">
+
+    A Poseidon Piscinas é uma empresa especializada no tratamento e manutenção de piscinas, oferecendo soluções completas para garantir que você tenha sempre uma água cristalina, saudável e pronta para o lazer. Com um profissional qualificado e com anos de experiência, nos comprometemos a proporcionar serviços de alta qualidade, atendendo a clientes residenciais e comerciais com excelência e cuidado.
+
+</h2>
+
+<h1 class="texto">
+
+    Nossos Serviços:
+
+</h1>
+
+<h2 class="texto">
+
+    Na Poseidon Piscinas, oferecemos uma ampla gama de serviços, incluindo:
+
+</h2>
+
+<h3 class="texto">
+
+    Tratamento e limpeza de piscinas:
+
+    <br>Realizamos a limpeza completa da sua piscina, eliminando impurezas e garantindo que a água esteja sempre saudável e segura para uso.
+
+    <br>
+
+    <br>Análise e correção de pH:
+
+    Analisamos a composição química da água e ajustamos os níveis de pH, cloro e outros componentes essenciais para um ambiente seguro e confortável.
+
+    <br>
+
+    <br>Manutenção preventiva e corretiva:
+
+    Inspecionamos e fazemos a manutenção de todos os sistemas da piscina, como filtros, bombas e aquecedores, garantindo que tudo esteja funcionando corretamente.
+
+    <br>
+
+    <br>Fornecimento de produtos químicos:
+
+    Oferecemos produtos de alta qualidade para o tratamento da água, como cloro, algicidas, floculantes e outros produtos essenciais para a saúde da piscina.
+
+</h3>
+
+<h1 class="texto">
+
+    Por Que Escolher a Poseidon Piscinas?
+
+</h1>
+
+<h2 class="texto">
+
+    <br>1. Experiência e Credibilidade:
+
+    <br>Contamos com uma equipe qualificada e comprometida com a excelência no atendimento e na qualidade dos serviços prestados.
+
+    <br>
+
+    <br>2. Atendimento Personalizado:
+
+    <br>Cada cliente é único, e por isso oferecemos soluções personalizadas de acordo com as necessidades específicas de cada piscina.
+
+    <br>
+
+    <br>3. Tecnologia e Qualidade:
+
+    <br>Utilizamos equipamentos modernos e produtos de qualidade comprovada para garantir a eficácia dos nossos tratamentos.
+
+    <br>
+
+    <br>4. Compromisso com a Segurança:
+
+    <br>Priorizamos a segurança de nossos clientes, oferecendo uma água tratada de forma eficiente e que cumpre todas as normas sanitárias.
+
+</h2>
+
+<h2 class="texto">
+
+    Deixe a Poseidon Piscinas cuidar do seu lazer!
+
+</h2>
+
+</div>
+        <footer class="rodape">
+
+                    
+
+                <form action="https://api.staticforms.xyz/submit" class="form" method="post">
+
+                    <h3>Formulario de envio</h3>
+
+                    <Label>Nome Completo</Label>
+
+                    <input type="text" name="name" placeholder="Seu Nome Completo" required>
+
+                    <Label>Seu email para contato</Label>
+
+                    <input type="text" name="email" placeholder="Seu Email" required/>
+
+                    <Label>Sua mensagem</Label>
+
+                    <textarea name="message" cols="25" rows="10" placeholder="Escreva sua mensagem" required></textarea></p>
+
+                    <input type="text" name="honeypot" style="display:none">
+
+                    <input type="hidden" name="accessKey" value="c557e369-c0bd-4b8e-ace6-b94f1824891e">
+
+                    <input type="hidden" name="subject" value="Contact us from - poseidontratamentodepiscinas@gmail.com" />
+
+                    <input type="hidden" name="replyTo" value="">
+
+                    <input type="hidden" name="redirectTo" value="https://infinitycooperative.github.io/pagina-de-agradecimento-poseidon/">
+
+                    <input type="submit" value="Enviar" class="botaoenv"/>
+
+                </form>
+
+    </div>
+
+                <nav>
+
+                    <a href="https://poseidonpiscinas.github.io/SAC/"><img src="imagens/sac img.webp" class="Sac" alt="SAC"></a>
+
+                    <a href="https://beautsalon.github.io/Beauty_Salon/"><img src="imagens/beauty.webp" class="Beauty" alt="Beauty"></a>
+
+                </nav>
+
+                <p>
+                    <a href="https://www.facebook.com/share/1AzFnzxtrz/"><img src="imagens/face.webp" class="imagem" alt="Facebook"></a>
+                    <a href="mailto:poseidontratamentodepiscinas@gmail.com"><img src="imagens/email.webp" class="imagem" alt="Email"></a>
+                    <a href="https://www.instagram.com/poseidontratamentodepiscinas?igsh=dW0xcWlwNnNreDA1"><img src="imagens/instag.webp" class="imagem" alt="Intagram"></a>
+                    <a href="https://wa.me/+5518997981868"><img src="imagens/wpp.webp" class="imagem" alt="WhatsApp"></a>
+                </p>
+
+            <div class="box">
+                <div class="linha">
+                    <a href="https://poseidonpiscinas.github.io/tabela/" ><h4 class="nome">Tabela</h4></a>
+                    <a href="https://poseidonpiscinas.github.io/agendamento/" ><h4 class="nome">Agendamento</h4></a>
+                </div>
+                <div class="linha">
+                    <a href="https://poseidonpiscinas.github.io/cliente/" ><h4 class="nome">Cliente</h4></a>
+                    <a href="https://surveyheart.com/form/67b393a07629b06505159257" ><h4 class="nome">Feedback</h4></a>
+                </div>
+            </div>
+
+                    <a href="https://poseidonpiscinas.github.io/doacao/"><img src="imagens/icon pix.webp" alt="Pix" class="doacao"></a>
+
+                    <h6 class=direitos>Todos os direitos estão reservados à Poseidon Tratamento de Piscinas</h6>
+
+        </footer>
+
+    </body>
+
+</html>
+
